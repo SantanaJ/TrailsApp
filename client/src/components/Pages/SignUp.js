@@ -39,7 +39,7 @@ const SignUp = (props) => {
 
                                     <div className="card-body text-success">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email"
+                                        <input value = {props.username} onChange = {props.handleChange} type="email"
                                             className="form-control"
                                             id="exampleInputEmail1"
                                             aria-describedby="emailHelp"
@@ -47,7 +47,7 @@ const SignUp = (props) => {
                                         </input>
                                             &nbsp;
                                                 <label for="exampleInputPassword1">Password</label>
-                                                <input
+                                                <input value = {props.password} onChange = {props.handleChange}
                                                     type="password"
                                                     className="form-control"
                                                     id="exampleInputPassword1"
@@ -55,7 +55,7 @@ const SignUp = (props) => {
                                                 </input>
                                                 <div className="card-footer bg-transparent border-success">
                                                     <Link to="/homepage">
-                                                        <button type="button" className="btn btn-outline-success">ENTER</button>
+                                                        <button name="/auth/signup" onClick = {props.handleSubmit} type="button" className="btn btn-outline-success">ENTER</button>
                                                     </Link>
                                                 </div>
                                      </div>

@@ -125,22 +125,22 @@ body {
 }
 
 .right-banner-content {
-    padding-top: 90px;
+  
     padding-bottom:60px;
     padding-left:10px;
     padding-right:10px;
-    background-color: #1043a3;
+    background-color: #076942cc;
     text-align: left;
-    min-height: 680px;
-    height: 680px;
+    /* min-height: 680px; */
+    /* height: 680px; */
 }
 
 .right-banner-content h2 {
-    font-size: 48px;
+    font-size: 30px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 300;
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .best-offer {
@@ -170,7 +170,7 @@ body {
 }
 
 .best-offer-right-content {
-    background-color: rgb(11, 66, 23);
+    background-color: #076942cc;
     padding-top: 70px ;
     min-height: 550px;
     height: 550px;
@@ -223,6 +223,7 @@ body {
     .best-offer-right-content .pink-button {
         margin-bottom: 50px;
     }
+
 }
 
 html {
@@ -416,4 +417,42 @@ h6 {
     background: url(https://norwaytravelguide.no/image/193090/x/0/7-amazing-hikes-in-norway-3.jpg);
     background-size: cover;
     background-position: center center;
+  }
+
+.trailname{
+color: rgb(255, 217, 0);
+padding-top: 6px;
+padding-left:.3px;
+}
+
+.form-control{
+    height: 474px;
+}
+
+.dash-header{
+    color:rgb(255, 217, 0);
+    font-weight:bolder;
+}
+
+.parkname{
+padding-left:3px;
+color: rgb(151, 146, 117);
+}
+
+  @media (max-width: 991px) {
+    .weather-card.four.top{
+        width: 83.33333333%
+    }
+    .weather-card.three.top{
+        width: 83.33333333%
+    }
+    .weather-card.rain.top{
+        width: 83.33333333%
+    }
+    .weather-card.top{
+        width: 83.33333333%
+    }
+    .navbar.navbar-success.bg {
+        width: 50%
+    }
   }

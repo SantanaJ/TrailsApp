@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 import "./pages.css";
 
-const Dashboard = (props) => {
+class Dashboard extends Component {
+    state = {
+        trailName: "",
+        parkName: "",
+        longitude:"",
+        latitude:""
+      };
+    
+// componentDidMount(){
+     
+//     }
+// }
 
+
+
+
+
+    render() {
     return (
 
         <div>
@@ -29,20 +45,28 @@ const Dashboard = (props) => {
                         <div className="col-md-8">
                             <div className="left-banner-content">
                                 <div className="text-content">
-                                    <h6>Google Maps</h6>
-                                    <div className="line-dec"></div>
+                                    <h2 className="trailname">TRAIL NAME</h2>  
+                                    <h5 className="parkname">Park Name</h5>
+
+                                  
+                                    <iframe 
+                                        width="970"
+                                        height="596"
+                                        frameborder="0" style={{border:0}}
+                                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBqqFN4TDaFYBgsp-Rbq6eJYh35pw5Pplk&q=yosemite+CA" allowfullscreen>
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="right-banner-content">
-                                <div className="text-content">
-                                    <h6>NOTES</h6>
-                                    <div className="line-dec"></div>
-                                </div>
+                                <h3 className="dash-header">NOTES</h3>
                                 <div className="form-group">
                                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
+                                <Link to="/">
+                                <button type="button" className="btn btn-outline-warning">Send Email</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -55,6 +79,8 @@ const Dashboard = (props) => {
                         <div className="col-md-4">
                             <div className="best-offer-left-content">
                                 <h6>Image Column</h6>
+
+                                
                             </div>
                         </div>
                         <div className="col-md-8">
@@ -75,5 +101,6 @@ const Dashboard = (props) => {
             </section>
         </div>
     )}
+}
 
     export default Dashboard;
