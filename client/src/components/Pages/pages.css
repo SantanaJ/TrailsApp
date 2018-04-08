@@ -166,7 +166,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: rgb(255, 255, 255);
+    background-color: #076942cc;
 }
 
 .best-offer-right-content {
@@ -195,7 +195,7 @@ body {
     .left-banner-content h1 {
         font-size: 64px;
         font-weight: 300;
-        color: rgb(221, 166, 166);
+        color: rgb(9, 104, 56);
         line-height: 80px !important;
     }
     .banner .left-banner-content .line-dec {
@@ -215,7 +215,7 @@ body {
         text-align: center;
     }
     .best-offer-right-content {
-        background-color: #ffffff;
+        background-color: #2f996d;
         padding: 30px 30px;
         min-height: 550px;
         height: auto;
@@ -425,8 +425,8 @@ padding-top: 6px;
 padding-left:.3px;
 }
 
-.form-control{
-    height: 474px;
+.note-pad{
+    height: 499px;
 }
 
 .dash-header{
@@ -437,6 +437,18 @@ padding-left:.3px;
 .parkname{
 padding-left:3px;
 color: rgb(151, 146, 117);
+}
+
+.image-card{
+ width:489px;
+ height:410px;
+ background-color: rgb(31, 31, 30)
+ 
+}
+
+.image-header{
+    color:rgb(204, 174, 4);
+    font-weight:bolder;
 }
 
   @media (max-width: 991px) {

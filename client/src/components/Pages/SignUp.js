@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const SignUp = (props) => {
 
-    const divStyle={
+    const divStyle = {
         'max-width': '18rem'
     };
 
@@ -39,55 +39,45 @@ const SignUp = (props) => {
 
                                     <div className="card-body text-success">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input value = {props.username} onChange = {props.handleChange} type="email"
+                                        <input
+                                            type="email"
                                             className="form-control"
                                             id="exampleInputEmail1"
                                             aria-describedby="emailHelp"
-                                            placeholder="Enter email">
-                                        </input>
-                                            &nbsp;
-                                                <label for="exampleInputPassword1">Password</label>
-                                                <input value = {props.password} onChange = {props.handleChange}
-                                                    type="password"
-                                                    className="form-control"
-                                                    id="exampleInputPassword1"
-                                                    placeholder="Password">
-                                                </input>
-                                                <div className="card-footer bg-transparent border-success">
-                                                    <Link to="/homepage">
-                                                        <button name="/auth/signup" onClick = {props.handleSubmit} type="button" className="btn btn-outline-success">ENTER</button>
-                                                    </Link>
-                                                </div>
-                                     </div>
-                                </div>
-                             </center>
-                                    
-                        </div>
-                     </div>
-                 </div>
-            </section>
-                    <section id="intro" className="section intro no-padding">
-                        <div className="container-fluid">
-                            <div className="row no-gutter">
-                                <ul className="slides">
-                                    <li>
-                                        <div className="col-md-6">
-                                            <div className="avatar">
-                                                <img src="images/intro-img1.jpg" alt="" class="img-responsive"></img>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <p>
-                                                   
-                                                </p>
-                                            </div>
+                                            placeholder="Enter email"></input>
+                                        &nbsp;
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input
+                                            type="password"
+                                            className="form-control"
+                                            id="exampleInputPassword1"
+                                            placeholder="Password"></input>
+                                        <div className="card-footer bg-transparent border-success">
+                                            <Link to="/homepage">
+                                                <button
+                                                    type="button"
+                                                    className="btn btn-outline-success">ENTER</button>
+                                            </Link>
                                         </div>
-                                        </li>
-                                    </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </center>
+
+                        </div>
                     </div>
+                </div>
+            </section>
+            <section id="intro" className="section intro no-padding">
+                <div className="container-fluid">
+                    <div className="row no-gutter">
+                        <div className="col-md-6"></div>
+                    </div>
+                </div>
 
-    )};
+            </section>
+        </div>
 
-    export default SignUp;
+    )
+};
+
+export default SignUp;

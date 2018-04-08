@@ -66,26 +66,16 @@ const SignIn = (props) => {
                      </div>
                  </div>
             </section>
-                    <section id="intro" className="section intro no-padding">
-                        <div className="container-fluid">
-                            <div className="row no-gutter">
-                                <ul className="slides">
-                                    <li>
-                                        <div className="col-md-6">
-                                            <div className="avatar">
-                                                <img src="images/intro-img1.jpg" alt="" class="img-responsive"></img>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <p>
-                                                   
-                                                </p>
-                                            </div>
-                                        </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
+            <section id="intro" className="section intro no-padding">
+            <div className="container-fluid">
+                <div className="row no-gutter">
+                    <div className="col-md-6">
+                           
+                    </div>
+                </div>
+            </div>
+
+        </section>
                     </div>
 
     )};

@@ -27,7 +27,7 @@ const Homepage = (props) =>{
 
                     <div className="row">
                         
-                        <TrailCard imgClass={"one"} trailName={"yosemite"} location={"California"} />
+                        <TrailCard imgClass={"one"} trailName={"Yosemite Falls"} location={"California"} />
 
                         <TrailCard imgClass={"rain"} trailName={"Cascade Canyon"} location={"Wyoming"} />
 
@@ -35,9 +35,9 @@ const Homepage = (props) =>{
 
                     <div className="row">
 
-                        <TrailCard imgClass={"three"} trailName={"yosemite"} location={"California"} />
+                        <TrailCard imgClass={"three"} trailName={"Jenny Lake"} location={"Wyoming"} />
                     
-                        <TrailCard imgClass={"four"} trailName={"yosemite"} location={"California"} />
+                        <TrailCard imgClass={"four"} trailName={"Leigh Lake"} location={"Wyoming"} />
                 
                     </div>
 
