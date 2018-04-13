@@ -1,35 +1,30 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-// import API from "../../../../routes/API.js";
 import "./pages.css";
 
 import axios from "axios";
 
 class Dashboard extends React.Component {
-    state = { 
-        
-        trail:{
-            name:"",
-            park:"",
-            latitude: "",
-            longitude:"",
+    state = {
 
+        trail: {
+            name: "",
+            park: "",
+            latitude: "",
+            longitude: ""
         }
     }
 
-    componentDidMount(){
-        axios.get("/api/trail/"+ this.props.match.params.id)
-            .then((result)=>{
+    componentDidMount() {
+        axios
+            .get("/api/trail/" + this.props.match.params.id)
+            .then((result) => {
                 console.log(result.data);
-                this.setState({
-                    trail: result.data
-                })
+                this.setState({trail: result.data})
             });
     }
 
-   
-
-    render (){
+    render() {
 
         return (
 
@@ -64,12 +59,10 @@ class Dashboard extends React.Component {
                                             height="596"
                                             frameBorder="0"
                                             style={{
-                                                border: 0
-                                            }}
+                                            border: 0
+                                        }}
                                             src={`https://www.google.com/maps/embed/v1/view?key=AIzaSyBqqFN4TDaFYBgsp-Rbq6eJYh35pw5Pplk&zoom=18&maptype=satellite&center=${this.state.trail.latitude},${this.state.trail.longitude}`}
-                                            
-                                            allowFullScreen>
-                                        </iframe>
+                                            allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +103,6 @@ class Dashboard extends React.Component {
                                     <div className="row">
                                         <div className="col-md-6 col-sm-12">
                                             <h3 className="dash-header">Weather</h3>
-                                            
                                         </div>
                                     </div>
                                 </div>

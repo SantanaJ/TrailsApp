@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import "./pages.css";
 
 const SignIn = (props) => {
 
-    const divStyle={
+    const divStyle = {
         'max-width': '18rem',
         'margin': 'auto'
     };
@@ -35,50 +36,42 @@ const SignIn = (props) => {
                                 & get back on the trail
                             </p>
 
-                           
-                                <div className="card border-success mb-3" style={divStyle}>
-
-                                    <div className="card-body text-success">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email"
-                                            className="form-control"
-                                            id="exampleInputEmail1"
-                                            aria-describedby="emailHelp"
-                                            placeholder="Enter email">
-                                        </input>
-                                            &nbsp;
-                                                <label htmlFor="exampleInputPassword1">Password</label>
-                                                <input
-                                                    type="password"
-                                                    className="form-control"
-                                                    id="exampleInputPassword1"
-                                                    placeholder="Password">
-                                                </input>
-                                                <div className="card-footer bg-transparent border-success">
-                                                    <Link to="/homepage">
-                                                        <button type="button" className="btn btn-outline-success">ENTER</button>
-                                                    </Link>
-                                                </div>
-                                     </div>
+                            <div className="card border-success mb-3" style={divStyle}>
+                                <div className="card-body text-success">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        id="exampleInputEmail1"
+                                        aria-describedby="emailHelp"
+                                        placeholder="Enter email"></input>
+                                    &nbsp;
+                                    <label htmlFor="exampleInputPassword1">Password</label>
+                                    <input
+                                        type="password"
+                                        className="form-control"
+                                        id="exampleInputPassword1"
+                                        placeholder="Password"></input>
+                                    <div className="card-footer bg-transparent border-success">
+                                        <Link to="/homepage">
+                                            <button type="button" className="btn btn-outline-success">ENTER</button>
+                                        </Link>
+                                    </div>
                                 </div>
-                         
-                                    
+                            </div>
                         </div>
-                     </div>
-                 </div>
-            </section>
-            <section id="intro" className="section intro no-padding">
-            <div className="container-fluid">
-                <div className="row no-gutter">
-                    <div className="col-md-6">
-                           
                     </div>
                 </div>
-            </div>
-
-        </section>
+            </section>
+            <section id="intro" className="section intro no-padding">
+                <div className="container-fluid">
+                    <div className="row no-gutter">
+                        <div className="col-md-6"></div>
                     </div>
+                </div>
+            </section>
+        </div>
+    )
+};
 
-    )};
-
-    export default SignIn;
+export default SignIn;

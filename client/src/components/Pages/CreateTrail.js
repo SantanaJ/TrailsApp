@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import "./pages.css";
 
 const CreateTrail = (props) => {
 
@@ -34,40 +35,36 @@ const CreateTrail = (props) => {
                                 a new trail
                             </p>
 
-                            
-                                <div className="card border-success mb-3 " style={divStyle}>
+                            <div className="card border-success mb-3 " style={divStyle}>
 
-                                    <div className="card-body text-success">
-                                        <label for="inputCity">Trail Name</label>
-                                        <input type="text" className="form-control" id="inputCity"></input>
-                                        &nbsp;
-                                        <label for="inputCity">Latitude</label>
-                                        <input type="text" className="form-control" id="inputCity"></input>
-                                        &nbsp;
-                                        <label for="inputCity">Longitude</label>
-                                        <input type="text" className="form-control" id="inputCity"></input>
-                                        &nbsp;
-                                        <label for="inputCity">State | Providence</label>
-                                        <input type="text" className="form-control" id="inputCity"></input>
-                                        &nbsp;
-                                        <label for="inputCity">National Park Name</label>
-                                        <input type="text" className="form-control" id="inputCity"></input>
+                                <div className="card-body text-success">
+                                    <label for="inputCity">Trail Name</label>
+                                    <input type="text" className="form-control" id="inputCity"></input>
+                                    &nbsp;
+                                    <label for="inputCity">Latitude</label>
+                                    <input type="text" className="form-control" id="inputCity"></input>
+                                    &nbsp;
+                                    <label for="inputCity">Longitude</label>
+                                    <input type="text" className="form-control" id="inputCity"></input>
+                                    &nbsp;
+                                    <label for="inputCity">State | Providence</label>
+                                    <input type="text" className="form-control" id="inputCity"></input>
+                                    &nbsp;
+                                    <label for="inputCity">National Park Name</label>
+                                    <input type="text" className="form-control" id="inputCity"></input>
 
-                                        <div className="card-footer bg-transparent border-success">
-                                            <Link to="/homepage">
-                                                <button type="button" className="btn btn-outline-success">ENTER</button>
-                                            </Link>
-                                        </div>
+                                    <div className="card-footer bg-transparent border-success">
+                                        <Link to="/homepage">
+                                            <button type="button" className="btn btn-outline-success">ENTER</button>
+                                        </Link>
                                     </div>
                                 </div>
-                           
-
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-
     )
 };
 
