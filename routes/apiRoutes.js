@@ -6,13 +6,13 @@ module.exports = function (passport) {
     // // // Should match with "/api/Trail"
     router.route("/trail")
         .get(trailController.findAll)
-        .post(trailController.create)
+        .post(trailController.create);
         // .delete(trailController.remove);
     
     // // // Should match with "/api/Trail/:id"
-    // router
-    //     .route("/:id")
-    //     .get(TrailController.findById)
+    router
+        .route("/trail/:id")
+        .get(trailController.findById);
 
 
     // router.post("/addTrail", function(req, res){

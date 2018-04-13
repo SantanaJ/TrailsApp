@@ -3,11 +3,34 @@ import {Link} from "react-router-dom";
 // import API from "../../../../routes/API.js";
 import "./pages.css";
 
-const Dashboard = (props) => {
-    console.log(props);
+import axios from "axios";
 
-    
-  
+class Dashboard extends React.Component {
+    state = { 
+        
+        trail:{
+            name:"",
+            park:"",
+            latitude: "",
+            longitude:"",
+
+        }
+    }
+
+    componentDidMount(){
+        axios.get("/api/trail/"+ this.props.match.params.id)
+            .then((result)=>{
+                console.log(result.data);
+                this.setState({
+                    trail: result.data
+                })
+            });
+    }
+
+   
+
+    render (){
+
         return (
 
             <div>
@@ -33,8 +56,8 @@ const Dashboard = (props) => {
                             <div className="col-md-8">
                                 <div className="left-banner-content">
                                     <div className="text-content">
-                                        <h2 className="trailname">TRAIL NAME</h2>
-                                        <h5 className="parkname">Park Name</h5>
+                                        <h2 className="trailname">{this.state.trail.name}</h2>
+                                        <h5 className="parkname">{this.state.trail.park}</h5>
 
                                         <iframe
                                             width="970"
@@ -43,7 +66,7 @@ const Dashboard = (props) => {
                                             style={{
                                                 border: 0
                                             }}
-                                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBqqFN4TDaFYBgsp-Rbq6eJYh35pw5Pplk&q=yosemite+CA"
+                                            src={`https://www.google.com/maps/embed/v1/view?key=AIzaSyBqqFN4TDaFYBgsp-Rbq6eJYh35pw5Pplk&zoom=18&maptype=satellite&center=${this.state.trail.latitude},${this.state.trail.longitude}`}
                                             
                                             allowFullScreen>
                                         </iframe>
@@ -98,5 +121,6 @@ const Dashboard = (props) => {
             </div>
         );
     }
+}
 
 export default Dashboard;

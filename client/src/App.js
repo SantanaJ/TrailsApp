@@ -113,8 +113,8 @@ class App extends Component {
             return <Homepage />
         }} />
 
-        <Route exact path="/dashboard" render={()=>{
-            return <Dashboard/>
+        <Route exact path="/dashboard/:id" render={(props)=>{
+            return <Dashboard {...props}/>
         }} />
 
         <Route exact path="/createtrail" render={()=>{

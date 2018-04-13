@@ -12,6 +12,12 @@ module.exports = {
             res.json(dbTrail);
       });
   },
+  findById: function(req,res){
+    db.Trail
+        .findById(req.params.id)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err));
+  },
   create: function(req, res) {
       db.Trail
         .create(req.body)
