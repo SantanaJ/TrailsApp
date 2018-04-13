@@ -107,7 +107,7 @@ body {
     background-position: center center;
     min-height: 680px;
     height: 680px;
-    background-color: rgb(185, 185, 30);
+    background-color: rgb(35, 48, 48);
 }
 
 .left-banner-content h6 {
@@ -129,7 +129,7 @@ body {
     padding-bottom:60px;
     padding-left:10px;
     padding-right:10px;
-    background-color: #076942cc;
+    background-color: rgb(52, 71, 71);
     text-align: left;
     /* min-height: 680px; */
     /* height: 680px; */
@@ -166,11 +166,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: #076942cc;
+    background-color:  rgb(52, 71, 71);
 }
 
 .best-offer-right-content {
-    background-color: #076942cc;
+    background-color:  rgb(52, 71, 71);
     padding-top: 70px ;
     min-height: 550px;
     height: 550px;
@@ -215,7 +215,7 @@ body {
         text-align: center;
     }
     .best-offer-right-content {
-        background-color: #2f996d;
+        background-color:  rgb(52, 71, 71)d;
         padding: 30px 30px;
         min-height: 550px;
         height: auto;
@@ -401,23 +401,6 @@ h6 {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-.weather-card.rain .top {
-  background: url(https://www.freeroamingphotography.com/photos/grand-teton/grand-teton502.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-.weather-card.three .top {
-    background: url(http://www.rmalimo.com/wp-content/uploads/2016/04/rma2.jpg);
-    background-size: cover;
-    background-position: center center;
-  }
-
-.weather-card.four .top {
-    background: url(https://norwaytravelguide.no/image/193090/x/0/7-amazing-hikes-in-norway-3.jpg);
-    background-size: cover;
-    background-position: center center;
-  }
 
 .trailname{
 color: rgb(255, 217, 0);
@@ -452,15 +435,6 @@ color: rgb(151, 146, 117);
 }
 
   @media (max-width: 991px) {
-    .weather-card.four.top{
-        width: 83.33333333%
-    }
-    .weather-card.three.top{
-        width: 83.33333333%
-    }
-    .weather-card.rain.top{
-        width: 83.33333333%
-    }
     .weather-card.top{
         width: 83.33333333%
     }

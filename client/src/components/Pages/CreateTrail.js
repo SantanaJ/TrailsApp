@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 const CreateTrail = (props) => {
 
     const divStyle = {
-        'max-width': '18rem'
+        'max-width': '18rem',
+        'margin': 'auto'
     };
 
     return (
@@ -33,8 +34,8 @@ const CreateTrail = (props) => {
                                 a new trail
                             </p>
 
-                            <center>
-                                <div className="card border-success mb-3" style={divStyle}>
+                            
+                                <div className="card border-success mb-3 " style={divStyle}>
 
                                     <div className="card-body text-success">
                                         <label for="inputCity">Trail Name</label>
@@ -59,7 +60,7 @@ const CreateTrail = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                            </center>
+                           
 
                         </div>
                     </div>

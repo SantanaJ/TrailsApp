@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 const SignUp = (props) => {
 
     const divStyle = {
-        'max-width': '18rem'
+        'max-width': '18rem',
+        'margin':'auto'
     };
 
     return (
@@ -34,7 +35,7 @@ const SignUp = (props) => {
                                 & let's explore.
                             </p>
 
-                            <center>
+                      
                                 <div className="card border-success mb-3" style={divStyle}>
 
                                     <div className="card-body text-success">
@@ -61,7 +62,7 @@ const SignUp = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                            </center>
+                         
 
                         </div>
                     </div>
