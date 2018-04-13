@@ -15,6 +15,7 @@ import Homepage from "./components/Pages/Homepage";
 import Dashboard from "./components/Pages/Dashboard";
 import SignIn from "./components/Pages/SignIn";
 import SignUp from "./components/Pages/SignUp";
+import CreateTrail from "./components/Pages/CreateTrail";
 
 
 
@@ -112,8 +113,12 @@ class App extends Component {
             return <Homepage />
         }} />
 
-        <Route exact path="/dashboard/:trail" render={()=>{
+        <Route exact path="/dashboard" render={()=>{
             return <Dashboard/>
+        }} />
+
+        <Route exact path="/createtrail" render={()=>{
+            return <CreateTrail/>
         }} />
 
         </div>

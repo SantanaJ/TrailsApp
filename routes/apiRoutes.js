@@ -13,9 +13,12 @@ module.exports = function (passport) {
     // router
     //     .route("/:id")
     //     .get(TrailController.findById)
-    
-    module.exports = router;
 
+
+    // router.post("/addTrail", function(req, res){
+    //     console.log(req.body);
+    //     res.json("It really does.");
+    // });
 
     return router;
     

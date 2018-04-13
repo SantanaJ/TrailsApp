@@ -1,41 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
+// import API from "../../../../routes/API.js";
 import "./pages.css";
 
-class Dashboard extends Component {
-    state = {
-        trail: "",
-        park: "",
-        longitude: "",
-        latitude: ""
-    };
+const Dashboard = (props) => {
+    console.log(props);
 
-    componentDidMount() {
-        this.renderMap();
-    }
-
-    renderMap = () => {
-       API.getMaps()
-       .then(res =>
-        this.setState ({trail: res.data, park: "", longitude: "", latitude: "" })
-    )
-    .catch(err => console.log(err));
-    };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    render() {
+    
+  
         return (
 
             <div>
@@ -55,7 +27,7 @@ class Dashboard extends Component {
                     </Link>
                 </nav>
 
-                <section clasName="banner" id="top">
+                <section className="banner" id="top">
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-8">
@@ -67,12 +39,14 @@ class Dashboard extends Component {
                                         <iframe
                                             width="970"
                                             height="596"
-                                            frameborder="0"
+                                            frameBorder="0"
                                             style={{
-                                            border: 0
-                                        }}
+                                                border: 0
+                                            }}
                                             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBqqFN4TDaFYBgsp-Rbq6eJYh35pw5Pplk&q=yosemite+CA"
-                                            allowfullscreen></iframe>
+                                            
+                                            allowFullScreen>
+                                        </iframe>
                                     </div>
                                 </div>
                             </div>
@@ -99,9 +73,9 @@ class Dashboard extends Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="best-offer-left-content">
-                                    <div class="card image-card">
-                                        <h4 class="image-header">IMAGES</h4>
-                                        <div class="card-body">
+                                    <div className="card image-card">
+                                        <h4 className="image-header">IMAGES</h4>
+                                        <div className="card-body">
                                             <p>INSERT MEDIA</p>
 
                                         </div>
@@ -122,8 +96,7 @@ class Dashboard extends Component {
                     </div>
                 </section>
             </div>
-        )
+        );
     }
-}
 
 export default Dashboard;

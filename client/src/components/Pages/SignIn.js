@@ -46,7 +46,7 @@ const SignIn = (props) => {
                                             placeholder="Enter email">
                                         </input>
                                             &nbsp;
-                                                <label for="exampleInputPassword1">Password</label>
+                                                <label htmlFor="exampleInputPassword1">Password</label>
                                                 <input
                                                     type="password"
                                                     className="form-control"

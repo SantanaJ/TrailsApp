@@ -8,6 +8,7 @@ const TrailSchema = new Schema({
     longitude: Number,
     state: String,
     park: String
+    
 });
 
 module.exports = mongoose.model('Trail', TrailSchema);
