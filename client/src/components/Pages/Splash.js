@@ -14,22 +14,15 @@ const Splash = (props) => {
                             <p>Discovering uncharted areas</p>
 
                             <p className="text-center-auto">
-                                <Link to="/SignIn">
+                                <Link to="/signin">
                                     <button type="button" className="btn btn-outline-success">Log In</button>
                                 </Link>
-                                &nbsp; 
-                                <Link to="/SignUp">
+                                &nbsp;
+                                <Link to="/signup">
                                     <button type="button" href="signup.html" className="btn btn-outline-success">Sign Up</button>
                                 </Link>
                             </p>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section id="intro" className="section intro no-padding">
-                <div className="container-fluid">
-                    <div className="row no-gutter">
-                        <div className="col-md-6"></div>
                     </div>
                 </div>
             </section>

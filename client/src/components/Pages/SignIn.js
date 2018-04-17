@@ -5,7 +5,7 @@ import "./pages.css";
 const SignIn = (props) => {
 
     const divStyle = {
-        'max-width': '18rem',
+        'maxWidth': '18rem',
         'margin': 'auto'
     };
 
@@ -38,8 +38,11 @@ const SignIn = (props) => {
 
                             <div className="card border-success mb-3" style={divStyle}>
                                 <div className="card-body text-success">
-                                    <label for="exampleInputEmail1">Email address</label>
+                                    <label htmlFor="exampleInputEmail1">Email address</label>
                                     <input
+                                        value={props.username}
+                                        onChange={props.handleChange}
+                                        name="username"
                                         type="email"
                                         className="form-control"
                                         id="exampleInputEmail1"
@@ -48,25 +51,21 @@ const SignIn = (props) => {
                                     &nbsp;
                                     <label htmlFor="exampleInputPassword1">Password</label>
                                     <input
+                                        value={props.password}
+                                        onChange={props.handleChange}
+                                        name="password"
                                         type="password"
                                         className="form-control"
                                         id="exampleInputPassword1"
                                         placeholder="Password"></input>
                                     <div className="card-footer bg-transparent border-success">
-                                        <Link to="/homepage">
-                                            <button type="button" className="btn btn-outline-success">ENTER</button>
-                                        </Link>
+
+                                        <button type="submit" name="/auth/signin" onClick={props.handleSubmit} className="btn btn-outline-success">ENTER</button>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section id="intro" className="section intro no-padding">
-                <div className="container-fluid">
-                    <div className="row no-gutter">
-                        <div className="col-md-6"></div>
                     </div>
                 </div>
             </section>

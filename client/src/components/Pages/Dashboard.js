@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import "./pages.css";
-
 import axios from "axios";
+import ReactDOM from 'react-dom';
+import {OpenWeatherMap} from 'react-weather';
 
 class Dashboard extends React.Component {
     state = {
@@ -31,7 +32,7 @@ class Dashboard extends React.Component {
             <div>
 
                 <nav className="navbar navbar-success bg-success">
-                    <Link className="navbar-brand" to="/">
+                    <Link className="navbar-brand" to="/homepage">
                         <svg
                             fill="#000000"
                             height="38"
@@ -43,6 +44,11 @@ class Dashboard extends React.Component {
                             <path d="M0 0h24v24H0z" fill="none"/>
                         </svg>
                     </Link>
+                    <button
+                        type="button"
+                        className="btn btn-dark"
+                        onClick={this.props.handleLogout}>Log Out
+                    </button>
                 </nav>
 
                 <section className="banner" id="top">
@@ -55,12 +61,8 @@ class Dashboard extends React.Component {
                                         <h5 className="parkname">{this.state.trail.park}</h5>
 
                                         <iframe
-                                            width="970"
-                                            height="596"
+                                            className="googleMap"
                                             frameBorder="0"
-                                            style={{
-                                            border: 0
-                                        }}
                                             src={`https://www.google.com/maps/embed/v1/view?key=AIzaSyBqqFN4TDaFYBgsp-Rbq6eJYh35pw5Pplk&zoom=18&maptype=satellite&center=${this.state.trail.latitude},${this.state.trail.longitude}`}
                                             allowFullScreen></iframe>
                                     </div>
@@ -68,7 +70,7 @@ class Dashboard extends React.Component {
                             </div>
                             <div className="col-md-4">
                                 <div className="right-banner-content">
-                                    <h3 className="dash-header">NOTES</h3>
+                                    <h5 className="dash-header">Write notes</h5>
                                     <div className="form-group">
                                         <textarea
                                             className="form-control note-pad"
@@ -89,20 +91,18 @@ class Dashboard extends React.Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="best-offer-left-content">
-                                    <div className="card image-card">
-                                        <h4 className="image-header">IMAGES</h4>
-                                        <div className="card-body">
-                                            <p>INSERT MEDIA</p>
-
-                                        </div>
-                                    </div>
+                                <h3 className="dash-header">Current Weather</h3>   
+                                   
+                                
+                                  
+                                    
                                 </div>
                             </div>
                             <div className="col-md-8">
                                 <div className="best-offer-right-content">
                                     <div className="row">
                                         <div className="col-md-6 col-sm-12">
-                                            <h3 className="dash-header">Weather</h3>
+                                            <h3 className="dash-header">Images</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -112,6 +112,7 @@ class Dashboard extends React.Component {
                 </section>
             </div>
         );
+
     }
 }
 

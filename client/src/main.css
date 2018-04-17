@@ -98,7 +98,7 @@ body {
 }
 
 .banner .left-banner-content {
-    padding-top: 90px;
+    padding-top: 10px;
     padding-bottom: 60px;
     padding-left: 120px;
     text-align: left;
@@ -125,7 +125,7 @@ body {
 }
 
 .right-banner-content {
-    padding-top: 90px;
+    padding-top: 40px;
     padding-bottom:60px;
     padding-left:10px;
     padding-right:10px;
