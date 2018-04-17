@@ -103,11 +103,13 @@ body {
 .banner .col-md-8 {
     padding-left: 0px;
     padding-right: 5px;
+    position: relative;
 }
 
 .banner .col-md-4 {
     padding-right: 0px;
     padding-left: 5px;
+    position: relative;
 }
 
 .banner .left-banner-content {
@@ -188,7 +190,7 @@ body {
     padding-top: 30px ;
     padding-right:2px;
     min-height: 550px;
-    height: 550px;
+    height: 613px;
     text-align: center;
 }
 

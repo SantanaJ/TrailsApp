@@ -45,11 +45,7 @@ class Dashboard extends React.Component {
                             <path d="M0 0h24v24H0z" fill="none"/>
                         </svg>
                     </Link>
-                    <button
-                        type="button"
-                        className="btn btn-dark"
-                        onClick={this.props.handleLogout}>Log Out
-                    </button>
+                    <button type="button" className="btn btn-dark" onClick={this.props.handleLogout}>Log Out</button>
                 </nav>
 
                 <section className="banner" id="top">
