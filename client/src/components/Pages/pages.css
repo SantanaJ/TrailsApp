@@ -37,6 +37,7 @@ body {
     width: 95%;
     height:560px;
     border: 0;
+    box-shadow: 0 1px 38px rgba(3, 29, 63, 0.486), 0 5px 12px rgba(44, 63, 173, 0.25);
 }
 
 /* Intro */
@@ -174,7 +175,7 @@ body {
     min-height: 550px;
     height: 550px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,13 +309,6 @@ h6 {
         width: 8.33333333%
     }
     .col-md-offset-1 {
-        margin-left: 8.33333333%
-    }
-}
-
-.row:after,
-.row:before {
-    display: table;
     content: " "
 }
 
@@ -367,7 +361,14 @@ h6 {
 }
 .weather-card .top .wrapper .mynav .lnr-cog {
   display: inline-block;
-  float: right;
+        margin-left: 8.33333333%
+    }
+}
+
+.row:after,
+.row:before {
+    display: tab;
+    float: right;
 }
 .weather-card .top .wrapper .heading {
   margin-top: 20px;
@@ -381,23 +382,23 @@ h6 {
   font-weight: 400;
   color: #fff;
 }
-.weather-card .top .wrapper .temp {
+.weather-card .top .wrapper  {
   margin-top: 20px;
 }
-.weather-card .top .wrapper .temp a {
+.weather-card .top .wrapper  {
   text-decoration: none;
   color: #fff;
 }
-.weather-card .top .wrapper .temp a .temp-type {
+.weather-card .top .wrapper   {
   font-size: 85px;
 }
-.weather-card .top .wrapper .temp .temp-value {
+.weather-card .top .wrapper   {
   display: inline-block;
   font-size: 85px;
   font-weight: 600;
   color: #fff;
 }
-.weather-card .top .wrapper .temp .deg {
+.weather-card .top .wrapper  .deg {
   display: inline-block;
   font-size: 35px;
   font-weight: 600;
@@ -465,6 +466,141 @@ float: left;
     }
   }
 
+/* Dashboard dailyTemp Card */
 
+.dailyTemp{
+    margin: 60px auto;
+    width: 100px auto;
+    height: 300px auto;
+    box-shadow: 0 1px 38px rgba(212, 212, 15, 0.486), 0 5px 12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+  }
+  .dailyTemp.top {
+    position: relative;
+    height: 570px;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+  }
+  .dailyTemp .top .wrapper {
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    text-align:center;
+  }
+  
+  .dailyTemp .top .wrapper .lnr-cog {
+    display: inline-block;
+    float: right;
+   }
+  .dailyTemp .top .wrapper .heading {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 500px;
+    color: rgb(255, 253, 253);
+  }
+  .dailyTemp .top .wrapper .location {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 480px;
+    color: rgb(153, 150, 138);
+  }
+  .dailyTemp .top .wrapper .temp {
+    margin-top: 60px;
+  }
+  
+  
+  .dailyTemp .top .wrapper .temp-value {
+    display: inline-block;
+    font-size: 85px;
+    font-weight: 600;
+    color: white;
+  }
+  .dailyTemp .top .wrapper .deg {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  
+  .dailyTemp .bottom {
+    padding: 0 30px;
+    background: rgb(105, 105, 75);
+  }
+  .dailyTemp .bottom .wrapper .forecast {
+    overflow: hidden;
+    margin: 0;
+    font-size: 0;
+    padding: 0;
+    padding-top: 20px;
+    max-height: 155px;
+  }
+  
+  .dailyTemp .bottom .wrapper .forecast .go-up {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .temp-title{
+    font-size:130px;
+    color: white;
+  
+  }
+  .dailyTemp .bottom .wrapper .forecast li {
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(185, 182, 182, 0.863);
+    line-height: 1em;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .dailyTemp .bottom .wrapper .forecast li .date {
+    display: inline-block;
+  }
+  .dailyTemp .bottom .wrapper .forecast li .condition {
+    display: inline-block;
+    vertical-align: middle;
+    text-align:left;
+    float: right;
+    font-size: 25px;
+  }
+  .dailyTemp .bottom .wrapper .forecast li .condition .temp {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 2px;
+    text-align:left;
+  }
+  .dailyTemp .bottom .wrapper .forecast li .condition .temp .deg {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 3px;
+    vertical-align: top;
+    text-align: left;
+  }
+  .dailyTemp .bottom .wrapper .forecast li .condition .temp .temp-type {
+    font-size: 20px;
+    text-align:left;
+  }
+  .dailyTemp .bottom .wrapper .forecast li.active {
+    color: rgba(56, 56, 56, 0.8);
+    text-align:left;
+  }
+  .dailyTemp .top {
+    background: url("https://i.pinimg.com/564x/f0/69/9e/f0699e9d9448188b96819111993f7875.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
 

@@ -12,7 +12,8 @@ class Dashboard extends React.Component {
             name: "",
             park: "",
             latitude: "",
-            longitude: ""
+            longitude: "",
+            state:"",
         }
     }
 
@@ -91,11 +92,45 @@ class Dashboard extends React.Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="best-offer-left-content">
-                                <h3 className="dash-header">Current Weather</h3>   
-                                   
-                                
-                                  
-                                    
+                                    <h3 className="dash-header">Current Weather</h3>
+
+                                    <div class="dailyTemp">
+                                        <div class="top">
+                                            <div class="wrapper">
+                                                <h1 class="heading">TODAY</h1>
+                                                <h3 class="location">{this.state.trail.state}</h3>
+                                                <br></br>
+                                                <p class="temp">
+                                                    <span class="temp-title">50</span>
+                                                    <span class="deg">0</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="wrapper">
+                                                <ul class="forecast">
+
+                                                    <li class="active">
+                                                        <span class="date">Yesterday</span>
+                                                        <span class="lnr lnr-sun condition">
+                                                            <span class="temp">22<span class="deg">0</span>
+                                                                <span class="temp-type">C</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="date">Tomorrow</span>
+                                                        <span class="lnr lnr-cloud condition">
+                                                            <span class="temp">18<span class="deg">0</span>
+                                                                <span class="temp-type">C</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <div className="col-md-8">
