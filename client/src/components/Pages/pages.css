@@ -175,7 +175,7 @@ body {
 
 .best-offer-left-content {
     min-height: 550px;
-    height: 550px;
+    height: 612px;
     padding-top: 30px;
     padding-bottom: 10px;
     text-align: center;
@@ -188,7 +188,7 @@ body {
 .best-offer-right-content {
     background-color:  rgb(52, 71, 71);
     padding-top: 30px ;
-    padding-right:2px;
+    padding-left:10px;
     min-height: 550px;
     height: 613px;
     text-align: center;
@@ -432,6 +432,7 @@ padding-left:.3px;
 .dash-header{
     color:rgb(255, 217, 0);
     font-weight:bolder;
+    text-align:left;
 }
 
 .parkname{
@@ -471,16 +472,16 @@ float: left;
 /* Dashboard dailyTemp Card */
 
 .dailyTemp{
-    margin: 60px auto;
+    margin: 10px auto;
     width: 100px auto;
-    height: 300px auto;
-    box-shadow: 0 1px 38px rgba(212, 212, 15, 0.486), 0 5px 12px rgba(0, 0, 0, 0.25);
+    height: 410px auto;
+    box-shadow: 0 1px 38px rgba(1, 10, 5, 0.486), 0 5px 12px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     position: relative;
   }
   .dailyTemp.top {
     position: relative;
-    height: 570px;
+    height: 600px;
     width: 100%;
     overflow: hidden;
     background-size: cover;
@@ -508,7 +509,7 @@ float: left;
     margin-top: 20px;
     font-size: 30px;
     font-weight: 480px;
-    color: rgb(153, 150, 138);
+    color: rgb(199, 151, 21);
   }
   .dailyTemp .top .wrapper .temp {
     margin-top: 60px;
@@ -600,9 +601,183 @@ float: left;
     text-align:left;
   }
   .dailyTemp .top {
-    background: url("https://i.pinimg.com/564x/e5/5f/48/e55f48f15792a0e690b21686f2d6cfee.jpg") no-repeat;
+    background: url("https://i.pinimg.com/564x/8e/df/80/8edf806427df507529b7ca0b393af041.jpg") no-repeat; */
+    
+    background-color:#38ADAE;
     background-size: cover;
     background-position: center center;
   }
 
+  /* .imageCard{
+    margin: 60px auto;
+    width: 60px auto;
+    height: 100px auto;
+    overflow: hidden;
+    position: relative;
+  } */
+
+
+  /* IMAGE GALLERY */
+  .gallery-wrapper {
+    width: 1222px;
+    height:520px;
+    position: relative;
+    background-color: rgba(27, 27, 27, 0.897);
+    box-shadow: 0 1px 38px rgba(1, 10, 5, 0.486), 0 5px 12px rgba(0, 0, 0, 0.25);
+  }
+  .gallery-wrapper:after {
+    padding-top: 40%;
+    display: block;
+    content: '';
+  }
+  .gallery-wrapper .column {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14.2857142857142857%;
+    float: left;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+  .gallery-wrapper .column .inner {
+    width: 100%;
+    position: relative;
+  }
+  .gallery-wrapper .column .inner:after {
+    padding-top: 100%;
+    /* ratio 1:1 */
+    display: block;
+    content: '';
+  }
+  .gallery-wrapper .column .inner:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .gallery-wrapper .column .inner:hover:before {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .gallery-wrapper .column:nth-child(1) {
+    width: 28.5714285714285714%;
+  }
+  .gallery-wrapper .column:nth-child(2) {
+    left: 28.5714285714285714%;
+  }
+  .gallery-wrapper .column:nth-child(3) {
+    left: 28.5714285714285714%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .gallery-wrapper .column:nth-child(4) {
+    width: 28.5714285714285714%;
+    left: 42.85714285714286%;
+    top: 0;
+  }
+  .gallery-wrapper .column:nth-child(4) .inner:after {
+    padding-top: 48.7%;
+  }
+  .gallery-wrapper .column:nth-child(5) {
+    left: 71.42857142857143%;
+    top: 0;
+  }
+  .gallery-wrapper .column:nth-child(6) {
+    left: auto;
+    right: 0;
+    top: 0;
+  }
+  .gallery-wrapper .column:nth-child(7) {
+    left: 71.42857142857143%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .gallery-wrapper .column:nth-child(8) {
+    left: auto;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .gallery-wrapper .column:nth-child(9) {
+    width: 28.5714285714285714%;
+    top: auto;
+    left: 0;
+    bottom: 0;
+  }
+  .gallery-wrapper .column:nth-child(9) .inner:after {
+    padding-top: 48.7%;
+  }
+  .gallery-wrapper .column:nth-child(10) {
+    left: 28.5714285714285714%;
+    top: auto;
+    bottom: 0;
+  }
+  .gallery-wrapper .column:nth-child(11) {
+    left: 42.85714285714286%;
+    top: auto;
+    bottom: 0;
+    width: 28.5714285714285714%;
+  }
+  .gallery-wrapper .column:nth-child(12) {
+    left: auto;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 28.5714285714285714%;
+  }
+  .gallery-wrapper .column:nth-child(12) .inner:after {
+    padding-top: 48.7%;
+  }
+  /* BEAUTY */
+  .gallery-wrapper .column .inner {
+    background-size: cover;
+    background-position: center;
+  }
+  .gallery-wrapper .column:nth-child(1) .inner {
+    background-image: url('https://recreation-acm.activefederal.com/assetfactory.aspx?did=7460');
+  }
+  .gallery-wrapper .column:nth-child(2) .inner {
+    background-image: url('https://s3.amazonaws.com/backpackersverse/wp-content/uploads/2015/08/18103540/11.-Half-Dome.jpg');
+  }
+  .gallery-wrapper .column:nth-child(3) .inner {
+    background-image: url('https://static1.squarespace.com/static/52e77ab3e4b0a4877ee01abd/530f82fce4b0340ce527dfba/530f8309e4b0b9ddff1340cd/1393525515702/20120521-yosemite-327.jpg?format=1500w');
+  }
+  .gallery-wrapper .column:nth-child(4) .inner {
+    background-image: url('https://beautifulworld.com/wp-content/uploads/2016/09/upper-yosemite-falls.jpg');
+  }
+  .gallery-wrapper .column:nth-child(5) .inner {
+    background-image: url('https://www.yosemite.com/wp-content/uploads/2016/12/yosemite-winter-james-kaiser-4.jpg');
+  }
+  .gallerywrapper .column:nth-child(6) .inner {
+    background-image: url('https://odis.homeaway.com/odis/destination/3f0a134d-6eb5-4b75-9f6d-a75958bf468d.hw1.jpg');
+  }
+  .gallery-wrapper .column:nth-child(7) .inner {
+    background-image: url('https://pbs.twimg.com/media/DaeaHdOXcAMH30W.jpg');
+  }
+  .gallery-wrapper .column:nth-child(8) .inner {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREWIDjOV_7fIOD4hnlytHE5kbE6rNa0J-QEiyZpKENz8VYVCel');
+  }
+  .gallery-wrapper .column:nth-child(9) .inner {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_S3ogRecWqCLjzq-tn6IlohcXPZMFRHho19_fXuT2YNoeGdt');
+  }
+  .gallery-wrapper .column:nth-child(10) .inner {
+    background-image: url('https://thumbs-prod.si-cdn.com/0Ht0Co8NADFdQXFn-QMeisEAsfw=/1072x500/https://public-media.smithsonianjourneys.org/filer/3f/c5/3fc54b8c-35cf-4de3-9300-56b3f52667f6/usa_ca_yosemite_koustav_maity_full_moonrise_over_the_half_dome_af48eab3-7f56-4b15-8dc8-963cd636192c.jpg');
+  }
+  .gallery-wrapper .column:nth-child(11) .inner {
+    background-image: url('https://images.unsplash.com/photo-1461703048574-9a342517f1bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9b9edd9ff5c9f14dcd2e1a48e1f5f65&w=1000&q=80');
+  }
+  .gallery-wrapper .column:nth-child(12) .inner {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5MbA83qgytfHoChgWZZ0GgpC3J0zYqwtDKZN-6YfRBy_6Vro3');
+  }
+  .gallery-wrapper .column:nth-child(13) .inner {
+    background-image: url('https://www.tenayalodge.com/~/media/tenaya/images/cropped-photos/640-x-414-package-size/yosemite-nevada-fall-liberty-cap-shutterstock_310729439.jpg');
+  }
 

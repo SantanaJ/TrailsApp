@@ -13,7 +13,7 @@ class Dashboard extends React.Component {
             park: "",
             latitude: "",
             longitude: "",
-            state:"",
+            state: ""
         }
     }
 
@@ -45,7 +45,10 @@ class Dashboard extends React.Component {
                             <path d="M0 0h24v24H0z" fill="none"/>
                         </svg>
                     </Link>
-                    <button type="button" className="btn btn-dark" onClick={this.props.handleLogout}>Log Out</button>
+                    <button
+                        type="button"
+                        className="btn btn-dark"
+                        onClick={this.props.handleLogout}>Log Out</button>
                 </nav>
 
                 <section className="banner" id="top">
@@ -88,7 +91,7 @@ class Dashboard extends React.Component {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="best-offer-left-content">
-                                    <h3 className="dash-header">Current Weather</h3>
+                                    <h3 className="dash-header">WEATHER</h3>
 
                                     <div class="dailyTemp">
                                         <div class="top">
@@ -133,7 +136,47 @@ class Dashboard extends React.Component {
                                 <div className="best-offer-right-content">
                                     <div className="row">
                                         <div className="col-md-6 col-sm-12">
-                                            <h3 className="dash-header">Images</h3>
+                                            <h3 className="dash-header">IMAGES</h3>
+
+                                            <div class="gallery-wrapper">
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="inner"></div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
