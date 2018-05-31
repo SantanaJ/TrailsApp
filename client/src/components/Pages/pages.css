@@ -433,6 +433,7 @@ padding-left:.3px;
     color:rgb(255, 217, 0);
     font-weight:bolder;
     text-align:left;
+    padding-left: 6px;
 }
 
 .parkname{
@@ -472,9 +473,9 @@ float: left;
 /* Dashboard dailyTemp Card */
 
 .dailyTemp{
-    margin: 10px auto;
+    margin: 17px auto;
     width: 100px auto;
-    height: 410px auto;
+    height: 460px auto;
     box-shadow: 0 1px 38px rgba(1, 10, 5, 0.486), 0 5px 12px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     position: relative;
@@ -532,7 +533,7 @@ float: left;
   }
   
   .dailyTemp .bottom {
-    padding: 0 30px;
+    padding: 0 40px;
     background: rgb(105, 105, 75);
   }
   .dailyTemp .bottom .wrapper .forecast {
@@ -541,14 +542,14 @@ float: left;
     font-size: 0;
     padding: 0;
     padding-top: 20px;
-    max-height: 155px;
+    max-height: 180px;
   }
   
   .dailyTemp .bottom .wrapper .forecast .go-up {
     text-align: center;
     display: block;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
   }
   
   .temp-title{
@@ -562,7 +563,7 @@ float: left;
     font-weight: 400;
     color: rgba(185, 182, 182, 0.863);
     line-height: 1em;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
     text-align: left;
   }
   .dailyTemp .bottom .wrapper .forecast li .date {
@@ -621,6 +622,7 @@ float: left;
   .gallery-wrapper {
     width: 1222px;
     height:520px;
+    overflow: hidden;
     position: relative;
     background-color: rgba(27, 27, 27, 0.897);
     box-shadow: 0 1px 38px rgba(1, 10, 5, 0.486), 0 5px 12px rgba(0, 0, 0, 0.25);
